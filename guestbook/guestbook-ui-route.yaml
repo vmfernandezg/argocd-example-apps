@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  annotations:
+    openshift.io/host.generated: 'true'
+  creationTimestamp: '2020-02-01T21:32:16Z'
+  labels:
+    app.kubernetes.io/instance: guestbook
+  name: guestbook-ui
+  namespace: guestbook
+  resourceVersion: '122001'
+  selfLink: /apis/route.openshift.io/v1/namespaces/guestbook/routes/guestbook-ui
+  uid: b2f20de4-f4bf-4056-9c1b-281ad7fa25bd
+spec:
+  host: guestbook-ui-guestbook.apps.mycluster.demovfernandezg.com
+  port:
+    targetPort: 80
+  to:
+    kind: Service
+    name: guestbook-ui
+    weight: 100
+  wildcardPolicy: None
