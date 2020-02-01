@@ -8,9 +8,7 @@ metadata:
     app.kubernetes.io/instance: guestbook
   name: guestbook-ui
   namespace: guestbook
-  resourceVersion: "129536"
   selfLink: /apis/route.openshift.io/v1/namespaces/guestbook/routes/guestbook-ui
-  uid: b2f20de4-f4bf-4056-9c1b-281ad7fa25bd
 spec:
   host: guestbook-ui-guestbook.apps.mycluster.demovfernandezg.com
   port:
